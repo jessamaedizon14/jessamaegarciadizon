@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17152f">
+  <meta name="description" content="Jessa Mae Dizon's Computer Engineering Portfolio">
+  <title>Jessa Mae Dizon | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <a href="#home" class="brand">
+      <span class="brand-mark">J</span>
+      <span>Jessa Mae <b>Dizon</b></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">Introduction</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link nav-contact">Contact Me ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- LANDING PAGE -->
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          COMPUTER ENGINEERING STUDENT
+        </p>
+
+        <p class="welcome">
+          Welcome to my portfolio <span class="sparkle">✦</span>
+        </p>
+
+        <h1>
+          Hi, I'm
+          <span class="name-gradient">Jessa Mae<br class="desktop-break"> Dizon.</span>
+        </h1>
+
+        <p class="hero-description">
+          Curious about how technology works. Excited to build,
+          explore, and turn ideas into meaningful projects.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="button button-primary">
+            Explore My Work ↗
+          </a>
+          <a href="#about" class="button button-quiet">
+            Get to Know Me ↓
+          </a>
+        </div>
+
+        <div class="hero-footnote">
+          <span class="line"></span>
+          Learning today. Building for tomorrow.
+        </div>
+      </div>
+
+      <!-- PROFILE PICTURE -->
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="portrait-frame">
+          <img src="jessadizon.jpg" alt="Portrait of Jessa Mae Dizon"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+
+          <div class="photo-fallback">
+            <span>JM</span>
+            <small>jessadizon.jpg</small>
+          </div>
+
+          <div class="portrait-shade"></div>
+
+          <div class="portrait-caption">
+            <span class="caption-icon">✧</span>
+            <div>
+              <b>Future Computer Engineer</b>
+              <small>Creative mind · Tech enthusiast</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-chip chip-top">
+          <span>✦</span> Always learning
+        </div>
+
+        <div class="floating-chip chip-bottom">
+          <span class="chip-pulse"></span> Ideas in progress
+        </div>
+
+        <span class="star star-a">✦</span>
+        <span class="star star-b">✧</span>
+        <span class="star star-c">✦</span>
+      </div>
+
+      <a href="#about" class="scroll-cue">
+        <span class="scroll-icon">↓</span> SCROLL TO EXPLORE
+      </a>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="section-wrap about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / A LITTLE ABOUT ME</p>
+        <h2>Curiosity is where<br>
+          <span>every great idea begins.</span>
+        </h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card reveal">
+          <div class="card-symbol">✳</div>
+          <h3>My Introduction</h3>
+
+          <p>
+            I am a Computer Engineering student who enjoys learning about
+            technology, computer hardware, software development, and networking.
+            Through my studies and school projects, I continue to develop my
+            technical skills and gain a better understanding of how technology
+            works. Although I do not have professional work experience yet,
+            I am eager to learn new things, improve my abilities, and gain
+            hands-on experience. I am always open to new challenges and
+            opportunities that will help me grow both personally and
+            professionally as a future Computer Engineer.
+          </p>
+        </div>
+
+        <aside class="about-note reveal">
+          <div class="note-top">MY MINDSET <span>✦</span></div>
+          <blockquote>
+            "Small steps, consistent learning, and a little curiosity
+            can lead to something amazing."
+          </blockquote>
+          <div class="note-signature">— Jessa Mae</div>
+          <div class="note-decoration">✧</div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="section-wrap skills-section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / WHAT I'M LEARNING</p>
+        <h2>Technical <span>Skills.</span></h2>
+        <p class="section-subtitle">
+          The foundations I'm building as I grow in Computer Engineering.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-icon icon-purple">⌘</div>
+          <span class="skill-number">01</span>
+          <h3>Computer Hardware</h3>
+          <p>Understanding computer components, system assembly,
+            and hardware fundamentals.</p>
+          <div class="skill-tags">
+            <span>Components</span><span>Troubleshooting</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon icon-blue">{ }</div>
+          <span class="skill-number">02</span>
+          <h3>Programming &amp; Software</h3>
+          <p>Developing logical thinking and exploring code,
+            applications, and software tools.</p>
+          <div class="skill-tags">
+            <span>Programming</span><span>Problem-solving</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon icon-pink">ϟ</div>
+          <span class="skill-number">03</span>
+          <h3>Electronics &amp; Embedded Systems</h3>
+          <p>Exploring circuits, microcontrollers, and how hardware
+            interacts with code.</p>
+          <div class="skill-tags">
+            <span>Electronics</span><span>Arduino</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-icon icon-gold">▱</div>
+          <span class="skill-number">04</span>
+          <h3>Engineering Tools</h3>
+          <p>Practicing technical documentation, system modeling,
+            and engineering design tools.</p>
+          <div class="skill-tags">
+            <span>UML</span><span>AutoCAD</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section-wrap projects-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / THINGS I'VE WORKED ON</p>
+        <h2>Projects &amp; <span>Practice.</span></h2>
+        <p class="section-subtitle">
+          A selection of school projects and hands-on learning experiences.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-art uml-art">
+            <span class="uml-node node-a">User</span>
+            <span class="uml-node node-b">System</span>
+            <span class="uml-node node-c">Database</span>
+            <span class="uml-line line-a"></span>
+            <span class="uml-line line-b"></span>
+            <span class="art-label">SYSTEM DESIGN</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">01 / SYSTEMS <span>↗</span></div>
+            <h3>System Analysis &amp; UML Diagrams</h3>
+            <p>Organizing system requirements and representing processes
+              with clear UML diagrams.</p>
+            <div class="project-tags">
+              <span>Analysis</span><span>UML</span><span>Documentation</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art arduino-art">
+            <div class="board">
+              <span class="board-chip"></span>
+              <span class="board-port"></span>
+              <span class="board-pin pin-one"></span>
+              <span class="board-pin pin-two"></span>
+              <span class="board-pin pin-three"></span>
+              <span class="board-label">ARDUINO</span>
+            </div>
+            <span class="art-label">HARDWARE + CODE</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">02 / EMBEDDED <span>↗</span></div>
+            <h3>Arduino Project</h3>
+            <p>Exploring microcontrollers, electronic components, and
+              the connection between circuits and code.</p>
+            <div class="project-tags">
+              <span>Arduino</span><span>Electronics</span><span>Prototyping</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-art cad-art">
+            <div class="cad-grid"></div>
+            <div class="cad-cube"><span></span><i></i><b></b></div>
+            <span class="art-label">TECHNICAL DRAWING</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">03 / DESIGN <span>↗</span></div>
+            <h3>AutoCAD</h3>
+            <p>Practicing technical drawing, accurate dimensions,
+              and structured engineering designs.</p>
+            <div class="project-tags">
+              <span>AutoCAD</span><span>Drafting</span><span>Design</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="project-disclaimer reveal">
+        ✦ These projects represent my learning and academic practice.
+        I'm excited to keep improving and take on new challenges.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="contact-glow"></div>
+
+      <div class="section-wrap contact-inner reveal">
+        <p class="eyebrow">04 / LET'S CONNECT</p>
+        <h2>Have an idea?<br><span>Let's make it happen.</span></h2>
+        <p class="contact-copy">
+          I'm open to learning opportunities, collaborations, and
+          connecting with fellow tech enthusiasts.
+        </p>
+
+        <a class="button button-primary email-button"
+           href="mailto:jessamaegdizon@gmail.com">
+          Send Me an Email ↗
+        </a>
+
+        <div class="contact-details">
+          <a href="mailto:jessamaegdizon@gmail.com">
+            <span>EMAIL</span>jessamaegdizon@gmail.com
+          </a>
+
+          <a href="tel:09949474907">
+            <span>PHONE</span>0994 947 4907
+          </a>
+
+          <a href="https://www.facebook.com/jessamae.dizon.581#"
+             target="_blank" rel="noopener noreferrer">
+            <span>FACEBOOK</span>Connect with me ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-mark">J</span>
+      <span>Jessa Mae <b>Dizon</b></span>
+    </a>
+
+    <p>Designed with curiosity ✦ ©
+      <span id="currentYear">2026</span> Jessa Mae Dizon
+    </p>
+
+    <a class="back-top" href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
